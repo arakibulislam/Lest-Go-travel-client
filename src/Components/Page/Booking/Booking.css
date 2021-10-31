@@ -1,0 +1,62 @@
+
+  
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: rgb(41, 41, 41);
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  input , select, textarea {
+      border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%);
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  
+  input[type="submit"] {
+    border-radius: 10px;
+    
+  }
+  .tour-guide{
+    box-shadow: 0 0 64px rgb(17 17 17 / 20%);
+    border-radius: 20px;
+  }
+  .tour-img{
+      border-radius: 20px;
+  }
+
+ .manage-tb{
+    background-image: url('https://kit.juliha.com/walkon/wp-content/uploads/sites/17/2021/06/bgc_Artboard-3_2.png');
+    background-position: center right;
+    min-height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+  
+ }
+  .tb{
+      border-radius: 20px !important;
+      background-color: rgba(112, 112, 112, 0.199);  
+      font-weight: 500;
+  }
+ .add-packege{
+     top: -90px;
+ }
+
+ .register{
+   background-image: url("https://kit.juliha.com/walkon/wp-content/uploads/sites/17/2021/06/bgc_Artboard-3_2.png");
+   background-position: center right;
+    min-height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+ }

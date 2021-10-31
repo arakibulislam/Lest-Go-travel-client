@@ -1,0 +1,112 @@
+.bg-banner{
+    background-image: url('../../../images/banner-bg.jpeg');
+    background-position: center right;
+    min-height: 500px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+
+.text-banner{
+    padding-top:12rem;
+    font-size:5rem;
+    font-weight:700;
+}
+.banner-1{
+    position: relative;
+    top: 120px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px 5px rgb(0 0 0 / 5%);
+    
+}
+.banner-btn{
+    border-radius: 30px;
+    font-weight: 700;
+}
+.img{
+    width: 130px;
+    transition-duration: .5s;
+    transition-property: all;
+     
+}
+.img:hover{
+    transition-duration: .4s;
+    transition-property: all;
+    transform: scale(1.2);
+}
+
+.img-1{
+    border-radius: 15px 15px 0 0 ;
+    transition-duration: .5s;
+    transition-property: all;
+}
+.img-1:hover{
+    transition-duration: .4s;
+    transition-property: all;
+    transform: scale(1.2);
+}
+.img-2{
+    border-radius: 20px;
+}
+.about{
+    padding-top: 12rem;
+}
+.p-card{
+    box-shadow: 5px 5px 30px 5px rgb(0 0 0 / 5%);
+    border-radius: 15px !important;
+}
+
+.package-bg{
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+    padding: 60px 0 80px 0;
+}
+.packege-text{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(32, 32, 32);
+}
+
+.login{
+    background-image: url('https://kit.juliha.com/walkon/wp-content/uploads/sites/17/2021/06/bgc_Artboard-3_2.png');
+    background-position: center right;
+    min-height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.google {
+    font-weight: 500;
+    width: 100%;
+    height: 45px;
+  }
+  .links {
+    cursor: pointer;
+    color: white;
+    margin: 0 0 20px 0;
+  }
+ 
+  .links i {
+    font-size: 17px;
+  }
+ 
+  .booking{
+    background-position: center center;
+    min-height: 40vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+.booking h1{
+    font-weight: 800;
+    font-size: 4rem;
+    color: white;
+}
+.user-img{
+    width: 50px;
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+}
