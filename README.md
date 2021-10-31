@@ -10,9 +10,17 @@ I am using Reactjs for the front-end and Mongodb/heroku for the back-end. The st
 
 # In Our Packege
 
-📗 To provide best travelling services to the customers and travel agents
-📗 To provide a search platform where tourist can find their tour places according to their preference.
-📗 To promote responsible and interesting tourism so that people can enjoy their holiday at their favorable places.
-📗 Weather information
-📗 To provide efficient way to connect with various events.
-📗 To build healthy interaction opportunities for tourists and locals
+1. To provide best travelling services to the customers and travel agents
+2. To provide a search platform where tourist can find their tour places according to their preference.
+3. To promote responsible and interesting tourism so that people can enjoy their holiday at their favorable places.
+4. Weather information
+5. To provide efficient way to connect with various events.
+6. To build healthy interaction opportunities for tourists and locals.
+
+ # 🏆 Features :
+
+1. Login/Register System
+2. Admin Panel
+3. Manage, Create Packages
+4. Easy Bookings
+5. Manage Bookings
