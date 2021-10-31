@@ -12,6 +12,10 @@ import Admin from './Components/Admin/Admin/Admin';
 import MyBooking from './Components/Admin/MyBooking/MyBooking';
 import AddPackege from './Components/Admin/AddPackege/AddPackege';
 import AddBlogs from './Components/Admin/AddBlogs/AddBlogs';
+import Package from './Components/Page/Package/Package';
+import Blogs from './Components/Page/Blogs/Blogs';
+import Moment from './Components/Page/Moment/Moment';
+import PageNotFound from './Components/Page/PageNotFound/PageNotFound';
 
 
 function App() {
@@ -29,6 +33,15 @@ function App() {
             </Route>
             <Route exact path='/login'>
               <Login></Login>
+            </Route>
+            <Route exact path='/packege'>
+             <Package></Package>
+            </Route>
+            <Route exact path='/blogs'>
+             <Blogs></Blogs>
+            </Route>
+            <Route exact path='/moments'>
+             <Moment></Moment>
             </Route>
             <PrivatRoute exact path='/booking/:packegeId'>
               <Booking></Booking>
@@ -51,6 +64,9 @@ function App() {
             <PrivatRoute exact path='/addblogs'>
                 <AddBlogs></AddBlogs>
             </PrivatRoute>
+            <Route exact path="*">
+              <PageNotFound></PageNotFound>
+            </Route>
           </Switch>
         </BrowserRouter>
       </AuthProvider>

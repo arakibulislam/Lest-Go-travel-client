@@ -51,14 +51,7 @@ const AddBlogs = () => {
                             {errors.img && <span className='text-danger'>This field is required *</span>}
 
                             <label>Date</label>
-                            <select  {...register("date", { required: true })}>
-                                <option value="01/April/2021">01/April/2021</option>
-                                <option value="02/May/2021">02/May/2021</option>
-                                <option value="03/June/2021">03/June/2021</option>
-                                <option value="04/July/2021">04/July/2021</option>
-                                <option value="05/August/2021">05/August/2021</option>
-                                <option value="06/Sepetmber/2021">06/Sepetmber/2021</option>
-                            </select>
+                            <input type="date" {...register("date", { required: true })} />
 
                             <input className='btn btn-dark py-3 mt-5 ' type="submit" />
 

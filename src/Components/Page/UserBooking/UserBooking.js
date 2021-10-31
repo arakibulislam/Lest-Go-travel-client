@@ -1,7 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import swal from 'sweetalert';
 import useAuth from '../../../Contex/useAuth';
+import LoadingAnimation from '../../LoadingAnimation/LoadingAnimation';
 
 const UserBooking = () => {
     const [bookingData, setBookingData] = useState([]);
@@ -17,27 +19,34 @@ const UserBooking = () => {
     }, [bookStatus]);
 
     const handleDelete = id => {
-        axios.delete(`https://glacial-meadow-20329.herokuapp.com/deletebooking/${id}`)
+        const procced = window.confirm('Are You Sure ?')
+        if(procced){
+            axios.delete(`https://glacial-meadow-20329.herokuapp.com/deletebooking/${id}`)
             .then(res => {
                 console.log(res.data);
+                swal("Oh No!", "You have cancle your booking successfully!", "success");
                 setBookStatus(bookStatus + 1);
             })
+        }
     }
     return (
         <div className='manage-tb'>
             <div className='all-margin  container'>
 
                 <div className='px-5 tb-1 table-responsive'>
-                    <h1 className='tb py-3 ps-4 mb-5'>
+                    <h1 className='tb py-3 ps-4 mb-5 position-relative'>
                         My Booking
                     </h1>
-                    <table class="table table-borderless tb mt-5">
+                    {
+                        bookingData.length === 0 ? <LoadingAnimation></LoadingAnimation> :
+                        <table class="table table-borderless tb mt-5">
                         <thead class=" p-4">
                             <tr className='p-5'>
                                 <th scope="col">#</th>
                                 <th scope="col">Packege Name</th>
                                 <th scope="col">price</th>
                                 <th scope="col">Duration</th>
+                                <th scope="col">Booking Date</th>
                                 <th scope="col">status</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -49,6 +58,7 @@ const UserBooking = () => {
                                     <td>{data.packagename}</td>
                                     <td>{data.price}</td>
                                     <td>{data.duration}</td>
+                                    <td>{data.date}</td>
                                     <td style={{color: data.color}}>{data.status}</td>
                                     <td>
                                         <Button variant="outline-danger" className='rounded-pill d-flex align-items-center py-0 px-3' onClick={() => handleDelete(data._id)} >
@@ -58,7 +68,7 @@ const UserBooking = () => {
                                 </tr>)
                             }
                         </tbody>
-                    </table>
+                    </table>}
                 </div>
             </div>
         </div>

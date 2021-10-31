@@ -1,10 +1,11 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
     return (
-        <Container className='bg-banner position-relative'>
+        <Container id="header" className='bg-banner position-relative'>
             <div className=' text-center bg-banner-2'>
                 <h1 className='text-banner'>
                     Eat, Sleep, And Travel
@@ -14,7 +15,9 @@ const Header = () => {
 
                     That’s exactly what an effective travel website should make you feel. It should activate the travel bug with vibrant imagery and vivid copy.
                 </p>
-                <Button className='btn btn-light py-3 px-5 banner-btn mt-4'> Book Now</Button>
+               <NavLink to='/packege'>
+               <Button className='btn btn-light py-3 px-5 banner-btn mt-4'> Book Now</Button>
+               </NavLink>
             </div>
             <div className='position-relative'>
                 <div className='  bg-white mx-4 banner-1'>
