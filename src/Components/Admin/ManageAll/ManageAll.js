@@ -9,14 +9,14 @@ const ManageAll = () => {
     const [bookingData, setBookingData] = useState([]);
     const [bookStatus, setBookStatus] = useState(1);
     useEffect(() => {
-        axios.get('http://localhost:5000/booking')
+        axios.get('https://glacial-meadow-20329.herokuapp.com/booking')
             .then(res => {
                 setBookingData(res.data);
             })
     }, [bookStatus]);
 
     const handleStatus = id => {
-        axios.put(`http://localhost:5000/status/${id}`)
+        axios.put(`https://glacial-meadow-20329.herokuapp.com/status/${id}`)
             .then(res => {
                 console.log(res.data);
                 setBookStatus(bookStatus + 1);
@@ -26,7 +26,7 @@ const ManageAll = () => {
     const handleDelete = id => {
         const procced = window.confirm('Are You Sure ?')
         if (procced) {
-            axios.delete(`http://localhost:5000/deletebooking/${id}`)
+            axios.delete(`https://glacial-meadow-20329.herokuapp.com/deletebooking/${id}`)
                 .then(res => {
                     console.log(res.data);
                     setBookStatus(bookStatus + 1);

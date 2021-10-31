@@ -8,7 +8,7 @@ const AddBlogs = () => {
 
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/blogs', data)
+        axios.post('https://glacial-meadow-20329.herokuapp.com/blogs', data)
             .then(res => {
                 if (res.data.acknowledged) {
                     swal("Blog Added!", "Blog added to the Website!", "success");

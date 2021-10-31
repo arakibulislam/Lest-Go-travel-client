@@ -9,7 +9,7 @@ const Package = () => {
     const [packegeData, setPackegeData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/packege')
+        axios.get('https://glacial-meadow-20329.herokuapp.com/packege')
             .then(res => {
                 setPackegeData(res.data)
             })

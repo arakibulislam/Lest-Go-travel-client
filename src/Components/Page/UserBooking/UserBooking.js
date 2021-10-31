@@ -9,7 +9,7 @@ const UserBooking = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/booking/${user.email}`)
+        axios.get(`https://glacial-meadow-20329.herokuapp.com/booking/${user.email}`)
             .then(res => {
 
                 setBookingData(res.data);
@@ -17,7 +17,7 @@ const UserBooking = () => {
     }, [bookStatus]);
 
     const handleDelete = id => {
-        axios.delete(`http://localhost:5000/deletebooking/${id}`)
+        axios.delete(`https://glacial-meadow-20329.herokuapp.com/deletebooking/${id}`)
             .then(res => {
                 console.log(res.data);
                 setBookStatus(bookStatus + 1);

@@ -8,7 +8,7 @@ const AddPackege = () => {
 
 
     const onSubmit = data => {
-        axios.post('http://localhost:5000/packege', data)
+        axios.post('https://glacial-meadow-20329.herokuapp.com/packege', data)
             .then(res => {
                 if (res.data.acknowledged) {
                     swal("Packege Added!", "Pacaege added to the Website!", "success");

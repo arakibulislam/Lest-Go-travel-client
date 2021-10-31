@@ -25,7 +25,7 @@ const Booking = () => {
     }, [packegeDetails])
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/singlepackege/${packegeId}`)
+        axios.get(`https://glacial-meadow-20329.herokuapp.com/singlepackege/${packegeId}`)
             .then(res => {
                 setPackegeDetails(res.data)
             })
@@ -37,7 +37,7 @@ const Booking = () => {
             color : "#B22222",
          ...data
     }
-    axios.post('http://localhost:5000/booking', bookingInfo)
+    axios.post('https://glacial-meadow-20329.herokuapp.com/booking', bookingInfo)
         .then(res => {
             if (res.data.insertedId) {
                 swal("Good job!", "You have successfully booked the packege!", "success");

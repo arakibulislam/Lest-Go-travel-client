@@ -12,7 +12,7 @@ const NavBar = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/booking/${user.email}`)
+        axios.get(`https://glacial-meadow-20329.herokuapp.com/booking/${user.email}`)
             .then(res => {
                 
                 setBookingData(res.data);
