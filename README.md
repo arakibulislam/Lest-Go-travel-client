@@ -8,7 +8,7 @@ Since tourism is one of the most significant industries in Bangladesh, we aim to
 
 I am using Reactjs for the front-end and Mongodb/heroku for the back-end. The styling part will be done using CSS and BootStrap while the functionality will be added using JavaScript. We plan on making it as user-friendly as possible, with preplanned packages and even custom packages available which user can choose according to his preference.
 
-# In Our Packege
+# 🏆 In Our Packege
 
 1. To provide best travelling services to the customers and travel agents
 2. To provide a search platform where tourist can find their tour places according to their preference.
